@@ -1,0 +1,6 @@
+# Each item will be rendered as <a href="{href}" target="{target}" class="{icon} icon" title="{title}">{title}</a>.
+#
+# Refer to https://semantic-ui.com/elements/icon.html to find available icons.
+socials = [
+  { href = "https://github.com/baozaodetudou", target="_blank", icon = "github", title = "GitHub" },
+]
