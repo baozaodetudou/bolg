@@ -1,4 +1,102 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+baseURL = "https://www.moyuban.cn/" # 你的域名，很重要，错误的话部署到线上将页面异常
+languageCode = "zh-Hans"
+defaultContentLanguage = "zh"
+title = "摸鱼总纲"
+theme = "dream"
+
+copyright = '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。<br /><br />'
+
+googleAnalytics = "UA-98295641-1"
+
+disqusShortname = "doumao"
+
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+# Paginate = 6
+
+enableGitInfo = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# https://gohugo.io/news/0.60.0-relnotes/
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  background = "#fff"
+  backgroundImage = "/me/bc.jpg"
+  linkColor = "seagreen"
+
+  # dark mode
+  # defaultDark = true
+  backgroundDark = "#333"
+  backgroundImageDark = "/me/background.jpg"
+  darkLinkColor = "darkseagreen"
+  # darkNav = true
+  # dark404 = true
+
+  images = ["me/background.jpg"]
+
+  author = "doumao"
+  description = "doumao 的摸鱼记录"
+  avatar = "/me/yy.png"
+  headerTitle = "doumao 的摸鱼记录"
+  motto = "向钱看，向前看"
+  # maxTags = 5
+  # categoriesLimitInHeader = 6 # deprecated
+  # headerBottomText = "" # deprecated
+
+  # footerBottomText = ""
+
+  rss = true
+
+  utterancesRepo = "baozaodetudou/baozaodetudou.github.io"
+
+  # valine = true
+  # LEANCLOUD_APP_ID = ""
+  # LEANCLOUD_APP_KEY = ""
+
+  email = "shenren1993@gmail.com"
+  # twitter = "doumao"
+  # facebook = "doumao"
+  # instagram = "doumao"
+  # mastodon = ""
+  # linkedin = "doumao"
+  # github = "doumao"
+  # stackoverflow = "5676489/doumao"
+  # codepen = "doumao"
+
+  siteStartYear = 2016
+
+  favicon = "/favicon.ico"
+
+  highlightjs = true
+  # highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+  highlightjsExtraLanguages = ["clojure", "ocaml"]
+  highlightjsTheme = "tomorrow"
+  highlightjsThemeDark = "tomorrow-night"
+
+  # search
+  enableSearch = true
+
+  # options
+  showSummaryCoverInPost = true
+  # hasTwitterEmbed = true
+  # reversePostAndAside = true
+  # shareInAside = true
+  fixedNav = true
+  # collapsibleTags = true
+  # collapseBySummary = true
+
+[params.advanced]
+  customCSS = ["css/custom.css"]
+  # customJSBefore = []
+  # customJS = []
+
+[params.experimental]
+  jsDate = true
+  jsDateFormat = "yyyy年MM月dd日"
+  # jsDateFormat = "yyyy年MM月dd日，cccc"
